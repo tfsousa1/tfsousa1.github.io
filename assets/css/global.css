@@ -93,7 +93,11 @@ section > * { max-width: 1600px; margin-left: auto; margin-right: auto }
 
 /* ============= TYPOGRAPHY ============ */
 
-body { font-family: var(--font-sans); text-align: center; }
+body { 
+    background-color: lightgreen;
+    font-family: var(--font-sans); 
+    text-align: center; 
+}
 
 h1 {
     font-size: var(--fs-xxxl);
@@ -126,3 +130,4 @@ p {
 	margin-bottom: 12px;
 }
 
+a { color: darkgreen; }
