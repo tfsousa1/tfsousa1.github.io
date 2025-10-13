@@ -94,7 +94,7 @@ section > * { max-width: 1600px; margin-left: auto; margin-right: auto }
 /* ============= TYPOGRAPHY ============ */
 
 body { 
-    background-color: lightgreen;
+    background-color: rgb(189, 230, 207);
     font-family: var(--font-sans); 
     text-align: center; 
 }
