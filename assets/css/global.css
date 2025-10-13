@@ -99,6 +99,11 @@ body {
     text-align: center; 
 }
 
+img {
+    height: 280px;
+    width: 50x;
+}
+
 h1 {
     font-size: var(--fs-xxxl);
     line-height: 1.2;
