@@ -302,7 +302,7 @@ h2 {
     font-size: var(--fs-xl);
     line-height: 1.2;    
     margin-top: 42px;
-    margin-bottom: 4px;
+    margin-bottom: 14px;
 }
 
 section h2:nth-child(1) { margin-top: 0 }
@@ -314,3 +314,12 @@ p {
     line-height: 1.6;
     margin-bottom: 20px;
 }
+
+.highlight-text {
+    background-color: var(--green-700);
+    color: white;
+    padding: 3px 12px 6px 12px;
+    width: fit-content;
+}
+
+img { margin-bottom: 24xp }
