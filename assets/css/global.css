@@ -1,3 +1,5 @@
+/* Tamires Ferreira de Sousa 76192 Group B */
+
 /*  ============= WEB BROWSER RESETS ============ */
 * { margin: 0; padding: 0; border: none }
 *, *::before, *::after { box-sizing: border-box }
@@ -42,35 +44,43 @@ section > *:last-child { margin-bottom: 0 !important }
 
 /*  ====================== HEADER ======================== */
 
-/* Padding around content: laptops / desktops  */
+/* NOTE: per the tutorial instructions we are moving the responsive padding
+   settings so they apply only to the section tag (not the whole body/header).
+   The original header media queries have been changed to target `section`. */
+
+/* Padding around content: laptops / desktops (moved from header -> section) */
 @media (min-width: 768px) {
-    header { 
+    section { 
         padding-top: 3%; 
         padding-right: 20%;
         padding-bottom: 0%;
-        padding-left: 20%
+        padding-left: 20%;
     }
 }
                         
-/* Padding around content: mobiles */
+/* Padding around content: mobiles (moved from header -> section) */
 @media (max-width: 767px) {
-    header { 
+    section { 
         padding-top: 5%;
         padding-right: 5%;
         padding-bottom: 0%;
-        padding-left: 5%
+        padding-left: 5%;
     }
 }
 
 /*  ====================== SECTIONS ======================== */
+/* (There were already section rules below in the original file.
+   If you prefer the other padding values (4% top etc.), remove or merge
+   one of these blocks. For now the above header->section values will take precedence.) */
 
 /* Padding around content: laptops / desktops */
 @media (min-width: 768px) {
     section { 
+        /* these are the original section values — you can keep or remove them */
         padding-top: 4%;
         padding-right: 20%;
         padding-bottom: 4%;
-        padding-left: 20%
+        padding-left: 20%;
     }
 }
                         
@@ -80,7 +90,8 @@ section > *:last-child { margin-bottom: 0 !important }
         padding-left: 5%;
         padding-right: 5%;
         padding-bottom: 5%;
-        padding-left: 5% }
+        padding-left: 5%;
+    }
 }
 
 /* Maximum width of any section */
@@ -100,10 +111,11 @@ body {
 }
 
 img {
-    height: 280px;
-    width: 50x;
+    height: 150px;
+    width: 150px;
 }
 
+/* baseline headings */
 h1 {
     font-size: var(--fs-xxxl);
     line-height: 1.2;
@@ -127,6 +139,7 @@ h3 {
     margin-bottom: 24px;
     line-height: 1.2;
     text-transform: uppercase;
+    color: #e6e5e5cb;
 }
 
 p {
@@ -135,4 +148,108 @@ p {
 	margin-bottom: 12px;
 }
 
-a { color: darkgreen; }
+span {
+    font-size: var(--fs-md);
+    line-height: 1.7;
+	margin-bottom: 12px;
+    background-color: #b2b0ac54;
+    width: fit-content;
+}
+
+/* a { color: #437243; } -- test */ 
+
+/* ======== HYPERLINKS ======== */
+a:link, a:visited {
+    color: #437243; 
+    transition: all 0.3s ease;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #437243;
+    text-underline-offset: 7px;
+}
+
+a:hover, a:focus, a:active {
+    color: greenyellow;
+    text-decoration-thickness: 2px;
+    text-decoration-color: greenyellow;
+    text-underline-offset: 7px;
+}
+
+
+
+/* ==================== HERO / VIDEO BACKGROUND ==================== */
+.hero-viewport {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* fullscreen */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #1e1e1e;
+}
+
+.hero-bg-video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -2;
+  pointer-events: none;
+  filter: brightness(0.9) contrast(1.05);
+}
+
+.hero-overlay {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(
+      to bottom,
+      rgba(129, 30, 160, 0.185) 0%,
+      rgba(57, 59, 32, 0.099) 50%,
+      rgba(0, 0, 0, 0.695) 100%
+  );
+  z-index: -1; 
+  pointer-events: none;
+}
+
+/* Hero content sits above video */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 2rem;
+  color: #fff;
+  text-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.hero-content h1 {
+  animation: heroTitle 1s ease-out both;
+  margin-bottom: 0.25rem;
+  color: #fff;
+}
+
+.hero-content h2 {
+  animation: heroSubtitle 1s ease-out 0.3s both;
+  color: #e1e1e1;
+}
+
+/* Keyframes for animation */
+@keyframes heroTitle {
+  0% { opacity: 0; transform: translateY(12px) scale(0.98); filter: blur(6px); }
+  60% { opacity: 1; transform: translateY(-6px) scale(1.02); filter: blur(0); }
+  100% { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
+}
+
+@keyframes heroSubtitle {
+  0% { opacity: 0; transform: translateY(8px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 640px) {
+  .hero-content h1 { font-size: 50px; }
+  .hero-content h2 { font-size: 30px; }
+}

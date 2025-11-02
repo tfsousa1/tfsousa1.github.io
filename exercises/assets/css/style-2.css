@@ -1,3 +1,5 @@
+/* Tamires Ferreira de Sousa 76192 Group B */
+
 /*  ============= WEB BROWSER RESETS ============ */
 * { margin: 0; padding: 0; border: none }
 *, *::before, *::after { box-sizing: border-box }
@@ -128,3 +130,7 @@ p {
 
 a { color: white; }
 
+footer {
+    color: rgb(196, 156, 190);
+    font-family: var(--font-sans);
+}
