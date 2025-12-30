@@ -1,8 +1,5 @@
-/* =====================================================
-   Tamires Ferreira de Sousa | 76192 | Group B
-   Project: Snazzy Crypto Wallet
-   Page-scoped styles only
-===================================================== */
+/* -- Tamires Ferreira de Sousa 76192 Group B */
+/* CRYPTO - style*/
 
 /* -----------------------------------------------------
    PAGE SCOPE
@@ -175,3 +172,13 @@ figure.icon {
 
 }
 
+/* --- Keep nav + footer consistent with the main site --- */
+nav, footer{
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Keep the logo small even if this project has global img rules */
+nav .brand img{
+  height: 48px;
+  width: auto;
+}

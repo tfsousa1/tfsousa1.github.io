@@ -1,4 +1,5 @@
-/* Add your custom CSS here */
+/* -- Tamires Ferreira de Sousa 76192 Group B */
+/* SMOOTHIES - style*/
 
 /* ================== BASE / TOKENS ================== */
 :root{
@@ -6,11 +7,13 @@
   --pad: 2rem;
   --font: "Neucha", system-ui, sans-serif;
 
+  /* Panel colours (matching mock) */
   --pink:   #ef9fb0;
   --mint:   #cfe4d9;
   --purple: #7e63bf;
   --beige:  #f5e8bf;
 
+  /* Title colours */
   --wm-title:#d6526c;
   --ap-title:#2e875e;
   --bb-title:#ffffff;
@@ -19,8 +22,10 @@
   --text: #1f2a25;
 }
 
-*{box-sizing:border-box}
-html,body{height:100%}
+*{ box-sizing:border-box; }
+
+html,body{ height:100%; }
+
 body{
   margin:0;
   font-family:var(--font);
@@ -28,31 +33,29 @@ body{
   line-height:1.45;
 }
 
-/* Container central */
+/* ================== WRAPPER ================== */
 .wrap{
-  width:min(100%,var(--wrap));
+  width:min(100%, var(--wrap));
   margin-inline:auto;
   padding-inline: clamp(1rem, 3vw, var(--pad));
 }
 
-/* Base class (exists in HTML) */
-.panel { width: 100%; }
-
 /* ================== HERO ================== */
 .hero{
-  position:relative;
   background:
-    linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.35)),
+    linear-gradient(180deg, rgba(0,0,0,.25), rgba(0,0,0,.18)),
     var(--hero) center/cover no-repeat;
   color:#fff;
   text-align:center;
-  padding-block: 5.5rem;
+  padding-block: 4.8rem;
 }
+
 .hero h1{
-  margin:0 0 .25rem 0;
+  margin:0 0 .25rem;
   font-size:clamp(3.2rem, 7vw, 4.6rem);
-  text-shadow:0 8px 28px rgba(0,0,0,.5);
+  text-shadow:0 8px 28px rgba(0,0,0,.45);
 }
+
 .hero .lead{
   margin:0;
   font-size:clamp(1.25rem, 2.2vw, 1.6rem);
@@ -61,74 +64,117 @@ body{
 /* ================== INTRO ================== */
 .intro{
   background:#fff;
-  padding-block: 2.2rem;
+  padding-block:2.2rem;
 }
+
 .intro p{
-  color:#6f48c6;
   text-align:center;
-  font-size:clamp(1.05rem, 1.1vw + .9rem, 1.25rem);
+  color:#6f48c6;
   max-width:78ch;
   margin:0 auto;
+  font-size:1.2rem;
 }
 
-/* ================== GRID DAS SEÇÕES ================== */
+/* ================== GRID ================== */
 .grid{
   display:grid;
-  grid-template-columns: 1.05fr .95fr;
+  grid-template-columns: 1fr 1fr;
   align-items:center;
-  gap: clamp(1.25rem, 4vw, 2.5rem);
-  padding-block: clamp(2.8rem, 6vw, 4rem);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  padding-block: clamp(3rem, 6vw, 4.5rem);
 }
-.grid--flip{ grid-template-columns: .95fr 1.05fr; }
-.grid--flip .text{ order:2 }
-.grid--flip .media{ order:1 }
 
-/* Tipografia das seções */
+.grid--flip .text{ order:2; }
+.grid--flip .media{ order:1; }
+
+/* ================== TEXT ================== */
+.text{
+  text-align:center;
+}
+
 .text h2{
-  margin:0 0 .5rem 0;
-  font-size:clamp(2rem, 3vw, 2.6rem);
-}
-.text p{
-  margin:0;
-  max-width:65ch;
-  font-size:1.03rem;
+  margin:0 0 .5rem;
+  font-size:clamp(2.1rem, 3vw, 2.7rem);
 }
 
-/* Imagens laterais */
+.text p{
+  margin:0 auto;
+  max-width:65ch;
+  font-size:1.05rem;
+}
+
+/* ================== IMAGES ================== */
 .media img{
   width:min(420px, 100%);
-  height:auto;
   display:block;
-  filter: drop-shadow(0 16px 26px rgba(0,0,0,.25));
+  margin-inline:auto;
+  filter: drop-shadow(0 14px 24px rgba(0,0,0,.25));
 }
-.tilt-right img{ transform: rotate(8deg) }
-.tilt-left  img{ transform: rotate(-8deg) }
-.align-right{ justify-self:end }
-.align-left { justify-self:start }
 
-/* ================== CORES E TÍTULOS POR PAINEL ================== */
-.panel--watermelon{ background: var(--pink);  }
-.panel--watermelon .text h2{ color: var(--wm-title); }
+/* ================== PANELS ================== */
+.panel--watermelon{
+  background:var(--pink);
+}
+.panel--watermelon h2{ color:var(--wm-title); }
 
-.panel--apple{ background: var(--mint); }
-.panel--apple .text h2{ color: var(--ap-title); }
+.panel--apple{
+  background:var(--mint);
+}
+.panel--apple h2{ color:var(--ap-title); }
 
 .panel--blueberry{
-  background: var(--purple);
+  background:var(--purple);
   color:#fff;
 }
-.panel--blueberry .text h2{ color: var(--bb-title); }
-.panel--blueberry .text p{ color:#fff; }
+.panel--blueberry h2{ color:#fff; }
+.panel--blueberry p{ color:#fff; }
 
-.panel--lemon{ background: var(--beige); }
-.panel--lemon .text h2{ color: var(--lm-title); }
-
-/* ================== RESPONSIVO ================== */
-@media (max-width: 900px){
-  .grid,
-  .grid--flip{ grid-template-columns:1fr; }
-  .grid--flip .text,.grid--flip .media{ order:initial }
-  .align-right,.align-left{ justify-self:center }
-  .media img{ width:min(460px, 92%); }
+.panel--lemon{
+  background:var(--beige);
 }
+.panel--lemon h2{ color:var(--lm-title); }
+
+/* ================== RESPONSIVE ================== */
+@media (max-width:900px){
+  .grid{
+    grid-template-columns:1fr;
+  }
+}
+
+.hero{
+  background-image:
+    linear-gradient(180deg, rgba(0,0,0,.25), rgba(0,0,0,.18)),
+    url("../img/smoothies-hero-image.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color:#fff;
+  text-align:center;
+  padding-block: 4.8rem;
+}
+
+
+/* Keep the nav logo small (prevents project CSS from resizing it) */
+nav .brand img{
+  height: 48px;
+  width: auto;
+}
+
+.hero{ margin-top: 0; }
+
+
+/* --- Keep nav + footer consistent with the main site (avoid project font bleeding) --- */
+nav, footer{
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Keep the logo size consistent */
+nav .brand img{
+  height: 48px;
+  width: auto;
+}
+
+
 

@@ -1,5 +1,5 @@
 /* -- Tamires Ferreira de Sousa 76192 Group B */
-/* HOMEPAGE */
+/* HOMEPAGE - style*/
 
 html{ scroll-behavior:smooth; }
 
@@ -183,4 +183,11 @@ footer.theme-dark .footer-icons a:hover i{
 .store-page a.btn.btn-store:visited {
   border-radius: 999px;
 }
+
+/* Force footer to use site default font */
+footer {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, Helvetica, Arial, sans-serif;
+}
+
 

@@ -1,4 +1,4 @@
-/* -- Tamires Ferreira de Sousa 76192 Group B */
+/* Tamires Ferreira de Sousa 76192 Group B */
 /* Multi-column  */
 
 /* ---------- SECTION 1 (Mission) ---------- */
@@ -115,4 +115,13 @@ div[class^="col-"] figure.icon {
 
 .section-selector-6.theme-light .cols-background .col-3:nth-child(3) {
   background-color: var(--red-300);
+}
+
+/* ================= NAV LOGO SIZE ================= */
+
+nav .brand img {
+  height: 48px;      /* ajuste fino: 44–52px se quiser */
+  width: auto;
+  max-width: 100%;
+  display: block;
 }

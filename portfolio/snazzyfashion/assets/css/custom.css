@@ -13,7 +13,7 @@ header h1 {
 }
 
 /* =========================================
-   HERO VIDEO (fix: cover + responsive)
+   HERO VIDEO
    ========================================= */
 
 header.hero-bg {
@@ -46,7 +46,7 @@ header.hero-bg .container-text {
 }
 
 /* =========================================
-   SECTIONS (your colours, but cleaner)
+   SECTIONS
    ========================================= */
 
 .section-selector-1 {
@@ -92,4 +92,22 @@ section figure img {
 /* Buttons */
 section .btn.btn-pill {
   border-radius: 999px;
+}
+
+
+nav .brand img{
+  height: 48px;
+  width: auto;
+}
+
+
+/* --- Keep nav + footer consistent with the main site (avoid project font bleeding) --- */
+nav, footer{
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Keep the logo size consistent */
+nav .brand img{
+  height: 48px;
+  width: auto;
 }
