@@ -3,85 +3,169 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Smooth Smoothies</title>
 
-  <!-- FONTE (igual ao layout) -->
+  <title>Tamires Sousa | Portfolio Project | Smooth Smoothies</title>
+  <meta name="description" content="Smooth Smoothies – where flavour meets goodness. A colourful, responsive landing page layout.">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
 
+  <!-- Lunevedy -->
+  <link rel="stylesheet" href="https://lunevedy.com/assets/2.0/css/lunevedy.min.css" />
+
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/custom.css">
 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
+
 <body>
 
-  <!-- ====================== HERO ====================== -->
-  <header class="hero"
-    style="--hero:url('file:///C:/Users/Tamires/Documents/Dorset/Semester 3/Front-end Web Development 1/websites/portfolio/smoothies/assets/img/smoothies-hero-image.jpg');">
-    <div class="wrap">
-      <h1>Smooth Smoothies</h1>
-      <p class="lead">Where flavour meets goodness.</p>
-    </div>
-  </header>
+<!-- ====================== NAV ====================== -->
+<nav class="theme-light">
+  <div class="container-menu">
+    <a href="../index.html" class="brand">
+      <img src="../assets/img/logo.png" alt="TS logo">
+    </a>
 
-  <!-- ====================== INTRO ====================== -->
-  <section class="intro">
-    <div class="wrap">
-      <p>Our world-class smoothies are great at any time of the day and
-      offer a tasty alternative to sugary and unhealthy snacks!</p>
-    </div>
-  </section>
+    <div class="container-menu-links">
+      <div class="nav-toggle" id="nav-toggle-btn" aria-label="Toggle menu" role="button" tabindex="0">
+        <div class="bar-1"></div>
+        <div class="bar-2"></div>
+        <div class="bar-3"></div>
+      </div>
 
-  <!-- ====================== SECTION 1 ====================== -->
-  <section class="panel panel--watermelon">
-    <div class="wrap grid">
-      <div class="col text">
-        <h2>Watermelon Wonder</h2>
-        <p>Watermelon is a delicious and refreshing fruit that's also good for you. It is high in vitamin C, vitamin A and many healthy plant compounds, but contains only 60 calories per smoothie. And because watermelon has a high water content, this smoothie is hydrating and helps you feel full.</p>
-      </div>
-      <div class="col media align-right tilt-right">
-        <img src="file:///C:/Users/Tamires/Documents/Dorset/Semester 3/Front-end Web Development 1/websites/portfolio/smoothies/assets/img/watermelon.png" alt="Watermelon slice">
-      </div>
+      <ul class="links-wrapper">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../portfolio/index.html">Portfolio</a></li>
+        <li><a href="../store/index.html">Store</a></li>
+        <li>
+          <a class="btn btn-solid btn-soft" id="btn-cta" href="../contact/index.html">
+            <span>Contact</span> <i class="fa-regular fa-envelope"></i>
+          </a>
+        </li>
+      </ul>
     </div>
-  </section>
+  </div>
+</nav>
 
-  <!-- ====================== SECTION 2 ====================== -->
-  <section class="panel panel--apple">
-    <div class="wrap grid grid--flip">
-      <div class="col text">
-        <h2>Apple Delight</h2>
-        <p>Apples are an awesome source of fibre and vitamin C. They also contain polyphenols, which can have numerous health benefits. Apples have been linked to a lower risk of heart disease because they contain soluble fibre that can help lower blood cholesterol. Studies have also shown that eating apples reduces the risk of type 2 diabetes.</p>
-      </div>
-      <div class="col media align-left tilt-left">
-        <img src="file:///C:/Users/Tamires/Documents/Dorset/Semester 3/Front-end Web Development 1/websites/portfolio/smoothies/assets/img/apple.png" alt="Green apple smoothie">
-      </div>
-    </div>
-  </section>
+<!-- ====================== HERO ====================== -->
+<header class="hero" style="--hero:url('assets/img/smoothies-hero-image.jpg');">
+  <div class="wrap">
+    <h1>Smooth Smoothies</h1>
+    <p class="lead">Where flavour meets goodness.</p>
+  </div>
+</header>
 
-  <!-- ====================== SECTION 3 ====================== -->
-  <section class="panel panel--blueberry">
-    <div class="wrap grid">
-      <div class="col text">
-        <h2>Blueberry Surprise</h2>
-        <p>One of our top sellers. Blueberries are so tasty that many people consider them their favourite fruit. In fact, because they are low in calories and incredibly good for you. Blueberries are often labeled a superfood. Blueberries have the highest antioxidant capacity of all the popular fruits and vegetables.</p>
-      </div>
-      <div class="col media align-right tilt-right">
-        <img src="file:///C:/Users/Tamires/Documents/Dorset/Semester 3/Front-end Web Development 1/websites/portfolio/smoothies/assets/img/blueberry.png" alt="Blueberries in a purple cup">
-      </div>
-    </div>
-  </section>
+<!-- ====================== INTRO ====================== -->
+<section class="intro">
+  <div class="wrap">
+    <p>
+      Our world-class smoothies are great at any time of the day and
+      offer a tasty alternative to sugary and unhealthy snacks!
+    </p>
+  </div>
+</section>
 
-  <!-- ====================== SECTION 4 ====================== -->
-  <section class="panel panel--lemon">
-    <div class="wrap grid grid--flip">
-      <div class="col text">
-        <h2>Lemon Luxury</h2>
-        <p>Add zest to your day with our delicious Lemon Luxury smoothie. As a citrus fruit, lemons are high in vitamin C, which is a primary antioxidant that helps reduce your risk of cardiovascular disease and lowers blood pressure. Refreshing and energising - that's our Lemony Luxury smoothie!</p>
-      </div>
-      <div class="col media align-left tilt-left">
-        <img src="file:///C:/Users/Tamires/Documents/Dorset/Semester 3/Front-end Web Development 1/websites/portfolio/smoothies/assets/img/lemon.png" alt="Lemons">
-      </div>
+<!-- ====================== WATERMELON ====================== -->
+<section class="panel panel--watermelon">
+  <div class="wrap grid">
+    <div class="col text">
+      <h2>Watermelon Wonder</h2>
+      <p>
+        Watermelon is a delicious and refreshing fruit that's also good for you.
+        High in vitamin C and vitamin A, it’s hydrating, low in calories and helps
+        you feel full.
+      </p>
     </div>
-  </section>
+    <div class="col media align-right tilt-right">
+      <img src="assets/img/watermelon.png" alt="Watermelon slice">
+    </div>
+  </div>
+</section>
+
+<!-- ====================== APPLE ====================== -->
+<section class="panel panel--apple">
+  <div class="wrap grid grid--flip">
+    <div class="col text">
+      <h2>Apple Delight</h2>
+      <p>
+        Apples are an excellent source of fibre and vitamin C.
+        Regular consumption is linked to improved heart health
+        and reduced risk of type 2 diabetes.
+      </p>
+    </div>
+    <div class="col media align-left tilt-left">
+      <img src="assets/img/apple.png" alt="Green apple smoothie">
+    </div>
+  </div>
+</section>
+
+<!-- ====================== BLUEBERRY ====================== -->
+<section class="panel panel--blueberry">
+  <div class="wrap grid">
+    <div class="col text">
+      <h2>Blueberry Surprise</h2>
+      <p>
+        One of our top sellers. Blueberries are low in calories,
+        rich in antioxidants and widely recognised as a superfood.
+      </p>
+    </div>
+    <div class="col media align-right tilt-right">
+      <img src="assets/img/blueberry.png" alt="Blueberry smoothie">
+    </div>
+  </div>
+</section>
+
+<!-- ====================== LEMON ====================== -->
+<section class="panel panel--lemon">
+  <div class="wrap grid grid--flip">
+    <div class="col text">
+      <h2>Lemon Luxury</h2>
+      <p>
+        Refreshing, energising and packed with vitamin C.
+        Lemon Luxury adds zest to your day while supporting
+        cardiovascular health.
+      </p>
+    </div>
+    <div class="col media align-left tilt-left">
+      <img src="assets/img/lemon.png" alt="Lemon smoothie">
+    </div>
+  </div>
+</section>
+
+<!-- ====================== FOOTER ====================== -->
+<footer class="theme-dark text-center-desktop text-center-mobile">
+
+  <h2>Tamires Sousa</h2>
+  <h3>Front-end designer and developer</h3>
+
+  <ul class="footer-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../portfolio/index.html">Portfolio</a></li>
+    <li><a href="../store/index.html">Store</a></li>
+    <li><a href="../contact/index.html">Contact</a></li>
+  </ul>
+
+  <ul class="footer-icons">
+    <li><a href="https://www.linkedin.com/in/tamiressousa/" target="_blank" rel="noreferrer"><i class="fab fa-linkedin"></i></a></li>
+    <li><a href="https://github.com/tfsousa1" target="_blank" rel="noreferrer"><i class="fab fa-github-square"></i></a></li>
+  </ul>
+
+  <p class="privacy">
+    <a href="../privacy.html">Privacy &amp; Legal</a>
+  </p>
+
+</footer>
+
+<script src="https://lunevedy.com/assets/js/lunevedy.js"></script>
 
 </body>
 </html>
+
+
+
 

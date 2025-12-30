@@ -1,0 +1,118 @@
+/* -- Tamires Ferreira de Sousa 76192 Group B */
+/* Multi-column  */
+
+/* ---------- SECTION 1 (Mission) ---------- */
+
+.section-selector-1 {
+  background-color: var(--lime-400);
+}
+
+.section-selector-1 .badge {
+  font-family: 'Saira Condensed', sans-serif;
+  letter-spacing: 1px;
+}
+
+.section-selector-1 .col-2 h2 {
+  font-family: 'Saira Condensed', sans-serif;
+  letter-spacing: 1px;
+  font-size: calc(var(--font-size-xl) * 1.2);
+}
+
+/* ---------- SECTION 2 (Candles store) ---------- */
+
+.section-selector-2 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Cards hover polish */
+.section-selector-2 .col-3 {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.section-selector-2 .col-3:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.12);
+}
+
+/* ---------- SECTION 3 (Refactoring UI – dark) ---------- */
+
+.section-selector-3.theme-dark {
+  background-color: var(--trend-800);
+}
+
+.section-selector-3 .col-1 h2 {
+  color: var(--sky-200);
+  font-size: var(--font-size-xxl);
+}
+
+.section-selector-3 .col-1 h3 {
+  color: var(--slate-200);
+}
+
+.section-selector-3 .col-3 h3 {
+  color: var(--sky-300);
+  font-weight: 400;
+}
+
+.section-selector-3 .col-3 p,
+.section-selector-3 .col-3 li {
+  color: var(--slate-200);
+}
+
+.section-selector-3.theme-dark .cols-background .col-3 {
+  background-color: var(--trend-700);
+}
+
+/* Icons */
+.section-selector-3 div[class^="flex-cols-"]
+div[class^="col-"] figure.icon {
+  color: var(--sky-300);
+}
+
+/* ---------- SECTION 4 (Statement block) ---------- */
+
+.section-selector-4 {
+  background-color: var(--yellow-300);
+  font-family: 'Inter', sans-serif;
+}
+
+.section-selector-4 h2 {
+  font-size: var(--font-size-xxl);
+}
+
+.section-selector-4 h2 span {
+  font-weight: 200;
+}
+
+/* ---------- SECTION 5 (Stats) ---------- */
+
+.section-selector-5.theme-light {
+  background-color: var(--slate-050);
+  font-family: 'Inter', sans-serif;
+}
+
+.section-selector-5 .col-1 h2 {
+  font-size: var(--font-size-xxl);
+}
+
+.section-selector-5 .col-1 h2 span.highlight {
+  color: var(--red-600);
+}
+
+.section-selector-5 .flex-cols-4 > .col-4 > h3 {
+  font-size: var(--font-size-xl);
+}
+
+/* ---------- SECTION 6 (Color cards) ---------- */
+
+.section-selector-6.theme-light .cols-background .col-3:nth-child(1) {
+  background-color: var(--green-200);
+}
+
+.section-selector-6.theme-light .cols-background .col-3:nth-child(2) {
+  background-color: var(--blue-200);
+}
+
+.section-selector-6.theme-light .cols-background .col-3:nth-child(3) {
+  background-color: var(--red-300);
+}

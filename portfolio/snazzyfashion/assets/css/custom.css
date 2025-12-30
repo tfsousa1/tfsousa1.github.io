@@ -1,0 +1,95 @@
+/* Tamires Ferreira de Sousa | 76192 | Group B */
+   /* Snazzy Fashion */
+
+/* Google Font */
+body {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Hero title size */
+header h1 {
+  font-size: var(--font-size-xxxl);
+  letter-spacing: 2px;
+}
+
+/* =========================================
+   HERO VIDEO (fix: cover + responsive)
+   ========================================= */
+
+header.hero-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+header.hero-bg .container-media {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+header.hero-bg video.background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Overlay above video */
+header.hero-bg .container-overlay {
+  z-index: 1;
+}
+
+/* Text above overlay */
+header.hero-bg .container-text {
+  position: relative;
+  z-index: 2;
+}
+
+/* =========================================
+   SECTIONS (your colours, but cleaner)
+   ========================================= */
+
+.section-selector-1 {
+  background-color: var(--green-800);
+}
+
+.section-selector-2 {
+  background-color: var(--gray-200);
+}
+
+.section-selector-3 {
+  background-color: var(--white-000);
+}
+
+.section-selector-4 {
+  background-color: var(--green-800);
+}
+
+/* Links in dark deckhead */
+.theme-dark.section-selector-1 a:link,
+.theme-dark.section-selector-1 a:visited {
+  color: var(--green-200);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.theme-dark.section-selector-1 a:focus,
+.theme-dark.section-selector-1 a:hover,
+.theme-dark.section-selector-1 a:active {
+  color: var(--white-000);
+}
+
+/* Icon colour in final section */
+.section-selector-4 div[class^="flex-cols-"] div[class^="col-"] figure.icon {
+  color: var(--white-000);
+}
+
+/* Images inside sections */
+section figure img {
+  border-radius: 14px;
+}
+
+/* Buttons */
+section .btn.btn-pill {
+  border-radius: 999px;
+}

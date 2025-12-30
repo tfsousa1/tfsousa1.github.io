@@ -1,4 +1,177 @@
-/* Add your custom CSS rules */
-body { font-family: 'Outfit', sans-serif; }
+/* =====================================================
+   Tamires Ferreira de Sousa | 76192 | Group B
+   Project: Snazzy Crypto Wallet
+   Page-scoped styles only
+===================================================== */
 
-header h1 { font-size: var(--font-size-xxxl) }
+/* -----------------------------------------------------
+   PAGE SCOPE
+----------------------------------------------------- */
+
+.cryptowallet-page {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--trend-900);
+}
+
+/* -----------------------------------------------------
+   HERO
+----------------------------------------------------- */
+
+.cryptowallet-page header.hero-bg h1 {
+  font-size: var(--font-size-xxxl);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.cryptowallet-page header.hero-bg h2 {
+  font-weight: 400;
+  opacity: 0.9;
+  max-width: 720px;
+  margin-inline: auto;
+}
+
+/* -----------------------------------------------------
+   SECTION 1 — OUR MISSION
+----------------------------------------------------- */
+
+.cryptowallet-page .section-selector-1 {
+  background-color: var(--trend-700);
+}
+
+.cryptowallet-page .section-selector-1 > .badge span {
+  color: var(--white-000);
+  background-color: var(--trend-700);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cryptowallet-page .section-selector-1 h2 {
+  margin-top: 12px;
+}
+
+/* -----------------------------------------------------
+   HEADINGS — ALL SECTIONS
+----------------------------------------------------- */
+
+.cryptowallet-page .section-selector-1 h2,
+.cryptowallet-page .section-selector-2 h2,
+.cryptowallet-page .section-selector-3 h2,
+.cryptowallet-page .section-selector-4 h2 {
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
+/* -----------------------------------------------------
+   SECTION 2 — BROWSER WALLET + ACADEMY
+----------------------------------------------------- */
+
+.cryptowallet-page .section-selector-2 {
+  background-color: var(--trend-800);
+}
+
+/* Images */
+.cryptowallet-page .section-selector-2 figure img {
+  border-radius: 14px;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.35);
+}
+
+/* Lists */
+.cryptowallet-page .section-selector-2 ul {
+  margin-top: 16px;
+}
+
+.cryptowallet-page .section-selector-2 li {
+  margin-bottom: 8px;
+}
+
+/* -----------------------------------------------------
+   SECTION 3 — SOCIAL TRADING
+----------------------------------------------------- */
+
+.cryptowallet-page .section-selector-3 {
+  background-color: var(--trend-700);
+}
+
+.cryptowallet-page .section-selector-3 figure img {
+  border-radius: 14px;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.35);
+}
+
+/* -----------------------------------------------------
+   SECTION 4 — TRADE WITH PEACE OF MIND
+----------------------------------------------------- */
+
+.cryptowallet-page .section-selector-4 {
+  background-color: var(--trend-700);
+}
+
+.cryptowallet-page .section-selector-4
+div[class^="flex-cols-"]
+div[class^="col-"] {
+  padding: 24px;
+}
+
+/* Icons */
+.cryptowallet-page .section-selector-4
+div[class^="flex-cols-"]
+div[class^="col-"]
+figure.icon {
+  color: var(--blue-300);
+  font-size: 2.4rem;
+  margin-bottom: 14px;
+}
+
+/* -----------------------------------------------------
+   ICON HOVER — SUBTLE, CLASSY
+----------------------------------------------------- */
+
+.cryptowallet-page .section-selector-4 figure.icon {
+  transition: transform 200ms ease, opacity 200ms ease;
+}
+
+.cryptowallet-page .section-selector-4 figure.icon:hover {
+  transform: translateY(-4px);
+  opacity: 0.85;
+}
+
+/* -----------------------------------------------------
+   VIDEO EMBED
+----------------------------------------------------- */
+
+.cryptowallet-page .container-video-yt iframe {
+  border-radius: 14px;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.4);
+}
+
+/* -----------------------------------------------------
+   LINKS (ACCESSIBILITY + CONSISTENCY)
+----------------------------------------------------- */
+
+.cryptowallet-page a {
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+}
+
+/* -----------------------------------------------------
+   RESPONSIVE TWEAKS
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+
+  .cryptowallet-page header.hero-bg h1 {
+    font-size: var(--font-size-xxl);
+  }
+
+  .cryptowallet-page header.hero-bg h2 {
+    font-size: var(--font-size-md);
+    padding-inline: 12px;
+  }
+
+  .cryptowallet-page .section-selector-4
+  div[class^="flex-cols-"]
+  div[class^="col-"] {
+    padding: 18px;
+  }
+
+}
+

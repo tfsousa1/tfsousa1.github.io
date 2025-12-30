@@ -1,4 +1,186 @@
+/* -- Tamires Ferreira de Sousa 76192 Group B */
+/* HOMEPAGE */
+
+html{ scroll-behavior:smooth; }
+
+body{
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* NAV / LOGO */
+nav.theme-light{
+  border-bottom:1px solid rgba(0,0,0,0.06);
+}
+
+nav .brand{
+  display:flex;
+  align-items:center;
+}
+
+nav .brand img{
+  max-height:40px;
+  width:auto;
+  display:block;
+}
+
+nav .links-wrapper a{
+  border-radius:10px;
+}
+
+#btn-cta.btn.btn-solid.btn-soft{
+  box-shadow:0 10px 18px rgba(0,0,0,0.10);
+}
+
+/* HERO */
+header.theme-light{
+  border-bottom:1px solid rgba(0,0,0,0.06);
+}
+
+header.theme-light .badge{
+  border-radius:999px;
+  letter-spacing:0.6px;
+}
+
+header.theme-light h1{
+  font-weight:700;
+  letter-spacing:-0.3px;
+}
+
+header.theme-light h2{
+  font-weight:400;
+  color:#555;
+  line-height:1.5;
+}
+
+header.theme-light figure{
+  border-radius:14px;
+  overflow:hidden;
+  box-shadow:0 12px 25px rgba(0,0,0,0.12);
+}
+
+header.theme-light figure img{
+  display:block;
+  width:100%;
+  height:auto;
+}
+
+/* PROJECT CARDS */
+.section-selector-1 .flex-cols-3 .col-3{
+  border-radius:14px;
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+
+.section-selector-1 .flex-cols-3 .col-3:hover{
+  transform:translateY(-4px);
+  box-shadow:0 14px 30px rgba(0,0,0,0.12);
+}
+
+.section-selector-1 figure.photos-zoom{
+  border-radius:12px;
+  overflow:hidden;
+}
+
+/* FOOTER */
+footer.theme-dark{
+  border-top:1px solid rgba(255,255,255,0.08);
+}
+
+footer.theme-dark .footer-icons i{
+  transition:transform .2s ease, opacity .2s ease;
+}
+
+footer.theme-dark .footer-icons a:hover i{
+  transform:translateY(-2px);
+  opacity:0.9;
+}
+
+/* MOBILE */
+@media (max-width:520px){
+  nav .brand img{ max-height:34px; }
+}
 
 
-header .col-text h2, .col-1 > h3 { line-height: 1.8 }
+/* =========================
+   STORE PAGE (scoped)
+   ========================= */
+
+.store-page .store-hero {
+  background: linear-gradient(180deg, rgba(0,0,0,0.03), rgba(0,0,0,0));
+}
+
+.store-page .store-section .store-intro h3 {
+  max-width: 70ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.store-page .store-grid {
+  align-items: stretch;
+}
+
+/* Card look */
+.store-page .store-card {
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.06);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Subtle hover */
+.store-page .store-card:hover {
+  transform: translateY(-2px);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+  box-shadow: 0 14px 40px rgba(0,0,0,0.09);
+}
+
+/* Book cover wrapper */
+.store-page .store-cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.03);
+  border-radius: 14px;
+  padding: 14px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+/* Cover sizing: keeps all aligned */
+.store-page .store-cover img {
+  max-height: 260px;
+  width: auto;
+  border-radius: 10px;
+}
+
+/* Tablet tweak */
+@media (min-width: 786px) and (max-width: 1024px) {
+  .store-page .store-cover img { max-height: 210px; }
+}
+
+/* Text styling */
+.store-page .store-meta {
+  opacity: 0.75;
+  margin-bottom: 8px;
+}
+
+.store-page .store-desc {
+  opacity: 0.9;
+  margin-bottom: 14px;
+}
+
+/* Push button to bottom */
+.store-page .btn-store {
+  margin-top: auto;
+}
+
+/* Make store buttons feel like your site, not Amazon */
+.store-page a.btn.btn-store:link,
+.store-page a.btn.btn-store:visited {
+  border-radius: 999px;
+}
 

@@ -2,17 +2,15 @@
 
 /* ================== BASE / TOKENS ================== */
 :root{
-  --wrap: 1040px;                 /* largura do conteúdo igual ao mock */
+  --wrap: 1040px;
   --pad: 2rem;
   --font: "Neucha", system-ui, sans-serif;
 
-  /* Cores EXATAS dos paineis (ajustadas para o mock) */
   --pink:   #ef9fb0;
   --mint:   #cfe4d9;
   --purple: #7e63bf;
   --beige:  #f5e8bf;
 
-  /* Títulos por seção */
   --wm-title:#d6526c;
   --ap-title:#2e875e;
   --bb-title:#ffffff;
@@ -36,6 +34,9 @@ body{
   margin-inline:auto;
   padding-inline: clamp(1rem, 3vw, var(--pad));
 }
+
+/* Base class (exists in HTML) */
+.panel { width: 100%; }
 
 /* ================== HERO ================== */
 .hero{
@@ -73,7 +74,7 @@ body{
 /* ================== GRID DAS SEÇÕES ================== */
 .grid{
   display:grid;
-  grid-template-columns: 1.05fr .95fr; /* proporção visual do mock */
+  grid-template-columns: 1.05fr .95fr;
   align-items:center;
   gap: clamp(1.25rem, 4vw, 2.5rem);
   padding-block: clamp(2.8rem, 6vw, 4rem);
@@ -93,7 +94,7 @@ body{
   font-size:1.03rem;
 }
 
-/* Imagens laterais com leve inclinação e sombra */
+/* Imagens laterais */
 .media img{
   width:min(420px, 100%);
   height:auto;
@@ -130,3 +131,4 @@ body{
   .align-right,.align-left{ justify-self:center }
   .media img{ width:min(460px, 92%); }
 }
+
